@@ -1,15 +1,13 @@
-# mctostringmappings
+# YarnClassStringMapper
 
-To install dependencies:
+This is a project that generates a file for pretty-printing minecraft types using yarn mappings.
+Generate a YarnStringMapper class for your version and place it in your fabric project.
 
+## Generating a StringMapper
+
+To generate the file clone the project and its submodules:
 ```bash
-bun install
+git clone --recurse-submodules https://github.com/CubicPulse/YarnClassStringMapper.git
 ```
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.6. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Then run `sh gen.sh <version>` (i.e. `sh gen.sh 1.20.4`)

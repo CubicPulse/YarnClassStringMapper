@@ -170,7 +170,7 @@ function buildJavaStringPrints() {
         lines.push(`a.put(${className.replaceAll("$", ".")}.class, Map.of(${fieldLines.join(", ")}));`);
     }
 
-    let template = fs.readFileSync("YarnClassStringMappings.template.java", "utf-8");
+    let template = fs.readFileSync("YarnStringMapper.template.java", "utf-8");
     for (let indent = 0; indent < 10; indent++) {
         for (let i = 0; i < lines.length; i++) {
             lines[i] = " " + lines[i];
@@ -178,7 +178,7 @@ function buildJavaStringPrints() {
         template = template.replace("//#{yarnmappings:indent=" + indent + "}", lines.join("\n"));
     }
 
-    fs.writeFileSync("YarnClassStringMappings.java", template);
+    fs.writeFileSync("YarnStringMapper.java", template);
     return lines;
 }
 

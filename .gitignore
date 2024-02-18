@@ -175,5 +175,5 @@ dist
 .DS_Store
 
 
-YarnClassStringMappings.java
+YarnStringMapper_*
 mappings.json
