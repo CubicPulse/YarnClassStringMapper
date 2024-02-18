@@ -34,12 +34,12 @@ public class YarnStringMapper {
         if(obj instanceof Object[]) {
             return createStringForList(Arrays.asList((Object[]) obj), indent);
         }
-        if(obj.getClass().isEnum()) {
-            return obj.getClass().getSimpleName() + "." + obj;
-        }
         YarnStringMapperEntry entry = a.get(obj.getClass());
         if (entry == null) {
             return obj.toString();
+        }
+        if(obj.getClass().isEnum()) {
+            return entry.className() + "." + obj;
         }
         var map = entry.map();
         StringBuilder sb = new StringBuilder();
