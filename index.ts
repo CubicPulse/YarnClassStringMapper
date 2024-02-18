@@ -171,7 +171,7 @@ function buildJavaStringPrints() {
     }
 
     let template = fs.readFileSync("YarnStringMapper.template.java", "utf-8");
-    for (let indent = 0; indent < 10; indent++) {
+    for (let indent = 0; indent < 32; indent++) {
         for (let i = 0; i < lines.length; i++) {
             lines[i] = " " + lines[i];
         }
