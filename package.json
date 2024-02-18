@@ -7,5 +7,10 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "adm-zip": "^0.5.10",
+    "java-class-parser": "^0.2.1"
   }
 }

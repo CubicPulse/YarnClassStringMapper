@@ -8,6 +8,8 @@ Generate a YarnStringMapper class for your version and place it in your fabric p
 To generate the file clone the project and its submodules:
 ```bash
 git clone --recurse-submodules https://github.com/CubicPulse/YarnClassStringMapper.git
+cd YarnClassStringMapper
+bun install
 ```
 
 Then run `sh gen.sh <version>` (i.e. `sh gen.sh 1.20.4`)

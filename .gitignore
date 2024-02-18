@@ -177,3 +177,5 @@ dist
 
 YarnStringMapper_*
 mappings.json
+classes-*.json
+temp/
