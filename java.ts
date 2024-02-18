@@ -1,4 +1,4 @@
-import parser from 'java-class-parser';
+import parser from './java-class-parser';
 import decompress from 'adm-zip';
 import * as fs from 'fs';
 
