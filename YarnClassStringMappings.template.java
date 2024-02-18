@@ -28,7 +28,7 @@ public class YarnStringMapper {
             String name = field.getName();
             String value = map.get(name);
             if (value == null) {
-                continue;
+                value = name;
             }
             if (fieldCount == 0) {
                 sb.append("\n");
